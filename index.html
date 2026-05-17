@@ -1,0 +1,1390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Howard Motors &middot; De Pere's Family-Run Mechanic and Used-Car Shop on Monroe Road Since 1976 &middot; 6 Month / 6,000 Mile Warranty</title>
+<meta name="description" content="Howard Motors has been the family-run mechanic and used-car shop at 3510 Monroe Road in De Pere, Wisconsin since 1976. Forty-nine years of full-service auto repair (tune-ups, oil changes, transmission, brake repair, full diagnostic) and used-vehicle sales under one roof. Most cars, trucks, and SUVs sold carry a 6 Month / 6,000 Mile warranty. (920) 336-7870.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --sky: #4a6b85;
+    --sky-soft: #93b0c4;
+    --navy: #1a2c3e;
+    --navy-deep: #0e1c2b;
+    --cream: #f4efe6;
+    --bone: #eae2d2;
+    --warm: #c9a878;
+    --warm-deep: #a8895c;
+    --clay: #b34b2c;
+    --clay-deep: #8e3a21;
+    --rose: #c98f74;
+    --ink: #1c1a16;
+    --ink-soft: #48433a;
+    --line: #d7cebd;
+    --white: #ffffff;
+    --display: 'Bebas Neue', sans-serif;
+    --serif: 'Cormorant Garamond', Georgia, serif;
+    --sans: 'Inter', system-ui, sans-serif;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: var(--sans);
+    color: var(--ink);
+    background: var(--cream);
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: inherit; text-decoration: none; }
+  img { max-width: 100%; height: auto; display: block; }
+  .container { max-width: 1240px; margin: 0 auto; padding: 0 28px; }
+
+  /* Header */
+  header {
+    position: sticky; top: 0; z-index: 50;
+    background: rgba(244, 239, 230, 0.96); backdrop-filter: blur(10px);
+    padding: 18px 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .nav { display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+  .brand {
+    font-family: var(--serif);
+    font-size: 22px; font-weight: 600; letter-spacing: 0.3px;
+    color: var(--navy);
+    line-height: 1.1;
+  }
+  .brand small {
+    display: block;
+    font-family: var(--sans);
+    font-size: 10px; letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--warm-deep);
+    font-weight: 600;
+    margin-top: 2px;
+  }
+  .nav-links { display: flex; gap: 26px; font-size: 14px; font-weight: 500; }
+  .nav-links a { color: var(--navy); transition: color 0.2s; }
+  .nav-links a:hover { color: var(--clay); }
+  .cta-btn {
+    background: var(--clay); color: var(--white);
+    padding: 13px 26px; border-radius: 2px;
+    font-size: 12px; font-weight: 700; letter-spacing: 0.12em;
+    text-transform: uppercase; transition: all 0.25s;
+    border: 1px solid var(--clay);
+    display: inline-block;
+  }
+  .cta-btn:hover { background: var(--clay-deep); border-color: var(--clay-deep); transform: translateY(-1px); }
+  .cta-btn-ghost {
+    background: transparent; color: var(--navy); border: 1px solid var(--navy);
+  }
+  .cta-btn-ghost:hover { background: var(--navy); color: var(--cream); }
+  @media (max-width: 940px) { .nav-links { display: none; } }
+
+  /* Hero */
+  .hero {
+    padding: 100px 0 92px;
+    background: linear-gradient(135deg, var(--navy) 0%, var(--navy-deep) 100%);
+    color: var(--cream);
+    position: relative; overflow: hidden;
+  }
+  .hero::before {
+    content: ''; position: absolute; top: -10%; right: -10%;
+    width: 720px; height: 720px;
+    background: radial-gradient(circle, rgba(201, 168, 120, 0.20), transparent 60%);
+    filter: blur(70px); pointer-events: none;
+  }
+  .hero::after {
+    content: ''; position: absolute; bottom: -20%; left: -10%;
+    width: 520px; height: 520px;
+    background: radial-gradient(circle, rgba(74, 107, 133, 0.30), transparent 65%);
+    filter: blur(60px); pointer-events: none;
+  }
+  .hero-grid {
+    display: grid; grid-template-columns: 1.25fr 1fr; gap: 72px; align-items: center;
+    position: relative; z-index: 2;
+  }
+  @media (max-width: 980px) { .hero-grid { grid-template-columns: 1fr; gap: 48px; } }
+  .hero-eyebrow {
+    font-size: 11px; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--warm); margin-bottom: 26px;
+  }
+  .hero h1 {
+    font-family: var(--serif); font-weight: 500;
+    font-size: clamp(40px, 5.2vw, 64px); line-height: 1.06;
+    margin-bottom: 26px; letter-spacing: -0.015em;
+    color: var(--cream);
+  }
+  .hero h1 em { color: var(--warm); font-style: italic; font-weight: 600; }
+  .hero-sub {
+    font-size: 19px; color: rgba(244, 239, 230, 0.85);
+    margin-bottom: 36px; max-width: 600px; line-height: 1.6;
+  }
+  .hero-actions { display: flex; gap: 18px; flex-wrap: wrap; align-items: center; }
+  .hero-phone { color: rgba(244, 239, 230, 0.78); font-size: 13px; letter-spacing: 0.08em; }
+  .hero-phone strong { color: var(--cream); font-size: 17px; display: block; font-family: var(--serif); font-weight: 600; letter-spacing: 0; margin-top: 2px; }
+
+  /* Hero banner notice */
+  .hero-notice {
+    background: rgba(179, 75, 44, 0.16);
+    border: 1px solid rgba(201, 168, 120, 0.32);
+    padding: 14px 20px; border-radius: 3px;
+    font-size: 13px; line-height: 1.55;
+    color: rgba(244, 239, 230, 0.92);
+    margin-top: 28px; max-width: 600px;
+  }
+  .hero-notice strong { color: var(--warm); font-weight: 700; letter-spacing: 0.04em; }
+
+  /* Hero trust strip */
+  .hero-strip {
+    display: flex; flex-wrap: wrap; gap: 10px; margin-top: 22px;
+  }
+  .hero-strip .chip {
+    font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
+    color: rgba(244, 239, 230, 0.9); font-weight: 600;
+    padding: 8px 14px;
+    border: 1px solid rgba(201, 168, 120, 0.4);
+    border-radius: 2px;
+    background: rgba(201, 168, 120, 0.08);
+  }
+
+  .hero-card {
+    position: relative;
+    background: var(--cream);
+    border-radius: 4px;
+    padding: 40px 36px;
+    box-shadow: 0 30px 60px rgba(0,0,0,0.28);
+    border-top: 4px solid var(--warm);
+  }
+  .hero-card-tag {
+    font-family: var(--display);
+    font-size: 14px; letter-spacing: 0.2em;
+    color: var(--clay); font-weight: 400;
+    margin-bottom: 18px;
+  }
+  .hero-card h3 {
+    font-family: var(--serif); font-weight: 600;
+    font-size: 29px; color: var(--navy); line-height: 1.18;
+    margin-bottom: 16px;
+  }
+  .hero-card-divider {
+    width: 56px; height: 2px; background: var(--warm);
+    margin: 18px 0 22px;
+  }
+  .hero-card-stat {
+    display: flex; gap: 18px; padding: 14px 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .hero-card-stat:last-child { border-bottom: none; }
+  .hero-card-stat .num {
+    font-family: var(--serif); font-size: 38px; font-weight: 600;
+    color: var(--clay); line-height: 1; min-width: 66px;
+  }
+  .hero-card-stat .lbl {
+    font-size: 13px; color: var(--ink-soft); line-height: 1.4; padding-top: 6px;
+  }
+  .hero-card-stat .lbl strong { color: var(--navy); display: block; font-size: 14px; }
+
+  /* Trust band */
+  .trust {
+    background: var(--white); padding: 44px 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .trust-grid {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 40px;
+    text-align: center;
+  }
+  @media (max-width: 780px) { .trust-grid { grid-template-columns: repeat(2, 1fr); gap: 28px; } }
+  .trust-item .num {
+    font-family: var(--serif); font-size: 42px; font-weight: 600;
+    color: var(--navy); display: block; line-height: 1;
+  }
+  .trust-item .num em { color: var(--clay); font-style: normal; }
+  .trust-item .lbl {
+    font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--ink-soft); margin-top: 10px; font-weight: 600;
+  }
+
+  /* Section base */
+  section { padding: 100px 0; }
+  .section-header { text-align: center; max-width: 800px; margin: 0 auto 60px; }
+  .section-eyebrow {
+    font-size: 11px; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--clay); margin-bottom: 18px;
+  }
+  .section-title {
+    font-family: var(--serif); font-weight: 500;
+    font-size: clamp(34px, 4.4vw, 52px); line-height: 1.08; color: var(--navy);
+    margin-bottom: 20px; letter-spacing: -0.015em;
+  }
+  .section-title em { color: var(--clay); font-style: italic; font-weight: 600; }
+  .section-sub { font-size: 18px; color: var(--ink-soft); line-height: 1.6; }
+
+  /* Heritage band */
+  .heritage { background: var(--bone); }
+  .heritage-grid {
+    display: grid; grid-template-columns: 1fr 1.3fr; gap: 72px; align-items: center;
+  }
+  @media (max-width: 980px) { .heritage-grid { grid-template-columns: 1fr; gap: 40px; } }
+  .heritage h2 {
+    font-family: var(--serif); font-weight: 500;
+    font-size: clamp(34px, 4.2vw, 50px); line-height: 1.1;
+    color: var(--navy); margin-bottom: 22px; letter-spacing: -0.01em;
+  }
+  .heritage h2 em { color: var(--clay); font-style: italic; font-weight: 600; }
+  .heritage p {
+    font-size: 17px; color: var(--ink-soft); margin-bottom: 18px; line-height: 1.7;
+  }
+  .heritage-quote {
+    font-family: var(--serif); font-style: italic;
+    font-size: 22px; color: var(--navy); padding: 26px 0;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    margin: 30px 0;
+    line-height: 1.45;
+  }
+  .heritage-img {
+    aspect-ratio: 4/5; border-radius: 4px; overflow: hidden;
+    background: linear-gradient(135deg, var(--sky), var(--navy));
+    position: relative;
+    box-shadow: 0 24px 56px rgba(26, 44, 62, 0.22);
+  }
+  .heritage-img-inner {
+    position: absolute; inset: 0;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    color: var(--cream); padding: 40px; text-align: center;
+  }
+  .heritage-img-inner .label {
+    font-family: var(--display); font-size: 14px; letter-spacing: 0.2em;
+    color: var(--warm); margin-bottom: 16px;
+  }
+  .heritage-img-inner .year {
+    font-family: var(--serif); font-size: 64px; font-style: italic; line-height: 1;
+    color: var(--cream); margin-bottom: 12px;
+  }
+  .heritage-img-inner .quote {
+    font-family: var(--serif); font-size: 22px; font-style: italic; line-height: 1.35;
+  }
+
+  /* Warranty band (the rare-credential band) */
+  .stage { background: var(--navy); color: var(--cream); position: relative; overflow: hidden; }
+  .stage::before {
+    content: ''; position: absolute; top: -20%; right: -10%;
+    width: 600px; height: 600px;
+    background: radial-gradient(circle, rgba(201, 168, 120, 0.20), transparent 60%);
+    filter: blur(70px); pointer-events: none;
+  }
+  .stage .section-eyebrow { color: var(--warm); }
+  .stage-grid {
+    display: grid; grid-template-columns: 1fr 1.15fr; gap: 64px; align-items: center;
+    position: relative; z-index: 2;
+  }
+  @media (max-width: 980px) { .stage-grid { grid-template-columns: 1fr; gap: 44px; } }
+  .stage-img {
+    aspect-ratio: 1/1; border-radius: 4px; overflow: hidden;
+    background: linear-gradient(155deg, var(--clay), var(--navy-deep));
+    position: relative;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    padding: 44px; text-align: center;
+    box-shadow: 0 28px 60px rgba(0, 0, 0, 0.32);
+  }
+  .stage-img-tag {
+    font-family: var(--display); font-size: 14px; letter-spacing: 0.22em;
+    color: var(--warm); margin-bottom: 16px;
+  }
+  .stage-img-headline {
+    font-family: var(--serif); font-size: 36px; font-style: italic; line-height: 1.15;
+    color: var(--cream); margin-bottom: 14px;
+  }
+  .stage-img-quote {
+    font-family: var(--serif); font-size: 19px; font-style: italic; line-height: 1.4;
+    color: rgba(244, 239, 230, 0.92);
+  }
+  .stage h2 {
+    font-family: var(--serif); font-weight: 500;
+    font-size: clamp(32px, 4.2vw, 50px); line-height: 1.1;
+    color: var(--cream); margin-bottom: 22px; letter-spacing: -0.01em;
+  }
+  .stage h2 em { color: var(--warm); font-style: italic; font-weight: 600; }
+  .stage p {
+    font-size: 17px; color: rgba(244, 239, 230, 0.84); margin-bottom: 18px; line-height: 1.7;
+  }
+  .stage-pull {
+    font-family: var(--serif); font-style: italic;
+    font-size: 23px; color: var(--cream); padding: 24px 0;
+    border-top: 1px solid rgba(201, 168, 120, 0.3);
+    border-bottom: 1px solid rgba(201, 168, 120, 0.3);
+    margin: 28px 0; line-height: 1.4;
+  }
+  .stage-list {
+    list-style: none; margin-top: 16px;
+  }
+  .stage-list li {
+    font-size: 15px; color: rgba(244, 239, 230, 0.92);
+    padding: 9px 0 9px 26px; position: relative;
+    border-bottom: 1px solid rgba(201, 168, 120, 0.16);
+  }
+  .stage-list li:last-child { border-bottom: none; }
+  .stage-list li::before {
+    content: '\2756'; position: absolute; left: 0; top: 9px;
+    color: var(--warm); font-weight: 700;
+  }
+  .stage-list strong { color: var(--cream); }
+
+  /* Services grid */
+  .services-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px;
+  }
+  @media (max-width: 1040px) { .services-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 700px) { .services-grid { grid-template-columns: 1fr; } }
+  .service {
+    background: var(--white); padding: 34px 30px; border-radius: 4px;
+    border: 1px solid var(--line); transition: all 0.3s;
+    position: relative; overflow: hidden;
+  }
+  .service::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+    background: var(--warm); transform: scaleX(0); transform-origin: left;
+    transition: transform 0.35s;
+  }
+  .service:hover { border-color: var(--warm); transform: translateY(-4px); box-shadow: 0 18px 44px rgba(26, 44, 62, 0.10); }
+  .service:hover::before { transform: scaleX(1); }
+  .service.featured { border-color: var(--warm); background: linear-gradient(180deg, var(--white) 0%, #fbf6ec 100%); }
+  .service.featured::before { transform: scaleX(1); background: var(--clay); }
+  .service-tag {
+    display: inline-block; font-family: var(--display);
+    font-size: 12px; letter-spacing: 0.2em;
+    color: var(--clay); margin-bottom: 14px;
+  }
+  .service h3 {
+    font-family: var(--serif); font-size: 25px; font-weight: 600;
+    color: var(--navy); margin-bottom: 12px; line-height: 1.2;
+  }
+  .service-meta {
+    font-size: 13px; color: var(--ink-soft); margin-bottom: 18px;
+    padding-bottom: 16px; border-bottom: 1px solid var(--line);
+  }
+  .service-meta strong { color: var(--navy); }
+  .service p { color: var(--ink-soft); font-size: 15px; margin-bottom: 22px; line-height: 1.65; }
+  .service ul { list-style: none; margin-bottom: 4px; }
+  .service li {
+    font-size: 14px; color: var(--ink-soft); padding-left: 24px;
+    position: relative; margin-bottom: 9px; line-height: 1.55;
+  }
+  .service li::before {
+    content: '\2713'; position: absolute; left: 0; top: 0;
+    color: var(--sky); font-weight: 700; font-size: 14px;
+  }
+
+  /* Lanes band (mechanic + used-car under one roof) */
+  .locations { background: var(--bone); }
+  .locations-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px;
+  }
+  @media (max-width: 980px) { .locations-grid { grid-template-columns: 1fr; max-width: 560px; margin: 0 auto; } }
+  .location-card {
+    background: var(--white); border: 1px solid var(--line);
+    border-radius: 4px; overflow: hidden;
+    transition: all 0.3s;
+  }
+  .location-card:hover { border-color: var(--warm); transform: translateY(-4px); box-shadow: 0 18px 44px rgba(26, 44, 62, 0.10); }
+  .location-banner {
+    aspect-ratio: 4/3;
+    background: linear-gradient(160deg, var(--sky-soft), var(--navy));
+    position: relative;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    padding: 32px 24px; text-align: center;
+  }
+  .location-banner.flagship { background: linear-gradient(160deg, var(--warm), var(--navy-deep)); }
+  .location-banner.harbor { background: linear-gradient(160deg, var(--sky), var(--navy)); }
+  .location-banner.occupational { background: linear-gradient(160deg, var(--clay), var(--navy-deep)); }
+  .location-banner-tag {
+    font-family: var(--display); font-size: 13px; letter-spacing: 0.22em;
+    color: var(--cream); margin-bottom: 10px;
+  }
+  .location-banner-name {
+    font-family: var(--serif); font-size: 26px; font-weight: 600;
+    color: var(--white); line-height: 1.2;
+  }
+  .location-banner-meta {
+    font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.85); margin-top: 8px; font-weight: 600;
+  }
+  .location-body { padding: 28px 28px 30px; }
+  .location-spec {
+    font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase;
+    color: var(--clay); font-weight: 700; margin-bottom: 12px;
+  }
+  .location-body h3 {
+    font-family: var(--serif); font-size: 23px; font-weight: 600;
+    color: var(--navy); margin-bottom: 12px; line-height: 1.25;
+  }
+  .location-body p {
+    font-size: 14px; color: var(--ink-soft); line-height: 1.65; margin-bottom: 12px;
+  }
+  .location-detail {
+    list-style: none; padding-top: 14px;
+    border-top: 1px solid var(--line);
+  }
+  .location-detail li {
+    font-size: 13px; color: var(--ink-soft);
+    padding: 6px 0; padding-left: 22px; position: relative;
+  }
+  .location-detail li::before {
+    content: '\2022'; position: absolute; left: 6px; top: 4px;
+    color: var(--warm); font-weight: 700;
+  }
+  .location-detail strong { color: var(--navy); }
+
+  /* Independent band */
+  .independent { background: var(--white); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  .independent-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center;
+  }
+  @media (max-width: 920px) { .independent-grid { grid-template-columns: 1fr; gap: 40px; } }
+  .independent h2 {
+    font-family: var(--serif); font-weight: 500;
+    font-size: clamp(32px, 4vw, 46px); line-height: 1.12; color: var(--navy);
+    margin-bottom: 22px; letter-spacing: -0.01em;
+  }
+  .independent h2 em { color: var(--clay); font-style: italic; font-weight: 600; }
+  .independent p { font-size: 17px; color: var(--ink-soft); margin-bottom: 16px; line-height: 1.7; }
+  .independent-points { list-style: none; margin-top: 24px; }
+  .independent-points li {
+    font-size: 15px; color: var(--ink-soft); padding: 12px 0 12px 30px;
+    position: relative; border-bottom: 1px solid var(--line); line-height: 1.6;
+  }
+  .independent-points li:last-child { border-bottom: none; }
+  .independent-points li::before {
+    content: '\2713'; position: absolute; left: 0; top: 12px;
+    color: var(--clay); font-weight: 700;
+  }
+  .independent-points strong { color: var(--navy); }
+  .independent-side {
+    background: var(--cream); border: 1px solid var(--line);
+    border-radius: 4px; padding: 40px 36px;
+    border-top: 4px solid var(--warm);
+  }
+  .independent-side .tag {
+    font-family: var(--display); font-size: 13px; letter-spacing: 0.2em;
+    color: var(--clay); margin-bottom: 16px;
+  }
+  .independent-side h3 {
+    font-family: var(--serif); font-size: 27px; font-weight: 600;
+    color: var(--navy); margin-bottom: 14px; line-height: 1.2;
+  }
+  .independent-side p { font-size: 15px; color: var(--ink-soft); margin-bottom: 0; line-height: 1.7; }
+  .independent-side .divider { width: 56px; height: 2px; background: var(--warm); margin: 18px 0; }
+
+  /* Audit table band */
+  .audit { background: var(--cream); }
+  .audit-table {
+    max-width: 1080px; margin: 0 auto;
+    background: var(--white); border: 1px solid var(--line);
+    border-radius: 4px; overflow: hidden;
+  }
+  .audit-row {
+    display: grid; grid-template-columns: 1fr 1.2fr 1fr;
+    padding: 22px 28px; border-bottom: 1px solid var(--line);
+    align-items: center; gap: 24px;
+  }
+  .audit-row:last-child { border-bottom: none; }
+  .audit-row.head {
+    background: var(--bone);
+    font-family: var(--display);
+    font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--navy); font-weight: 400;
+  }
+  .audit-row .query {
+    font-family: var(--serif); font-size: 17px; font-weight: 600; color: var(--navy);
+    line-height: 1.3;
+  }
+  .audit-row .finding { font-size: 14px; color: var(--ink-soft); line-height: 1.55; }
+  .audit-row .winner { font-size: 13px; color: var(--ink-soft); line-height: 1.5; font-style: italic; }
+  @media (max-width: 820px) {
+    .audit-row { grid-template-columns: 1fr; gap: 8px; padding: 18px 22px; }
+    .audit-row.head { display: none; }
+    .audit-row .query::before { content: 'Query: '; font-family: var(--display); font-size: 10px; letter-spacing: 0.22em; color: var(--clay); display: block; margin-bottom: 4px; font-weight: 400; }
+    .audit-row .finding::before { content: 'Howard Motors today: '; font-family: var(--display); font-size: 10px; letter-spacing: 0.22em; color: var(--clay); display: block; margin-bottom: 4px; font-weight: 400; }
+    .audit-row .winner::before { content: 'Cited instead: '; font-family: var(--display); font-size: 10px; letter-spacing: 0.22em; color: var(--clay); display: block; margin-bottom: 4px; font-weight: 400; }
+  }
+
+  /* Areas */
+  .areas { background: var(--bone); }
+  .areas-grid {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px;
+    max-width: 980px; margin: 0 auto;
+  }
+  @media (max-width: 900px) { .areas-grid { grid-template-columns: repeat(2, 1fr); } }
+  .area-pill {
+    padding: 18px 20px;
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: 2px;
+    text-align: center;
+    transition: all 0.25s;
+  }
+  .area-pill:hover { border-color: var(--warm); transform: translateY(-2px); box-shadow: 0 8px 22px rgba(26, 44, 62, 0.08); }
+  .area-pill .city {
+    font-family: var(--serif); font-size: 19px; font-weight: 600; color: var(--navy);
+    line-height: 1.2;
+  }
+  .area-pill .miles {
+    font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--ink-soft); margin-top: 4px; font-weight: 600;
+  }
+  .areas-note {
+    text-align: center; margin-top: 40px;
+    font-size: 14px; color: var(--ink-soft); font-style: italic;
+  }
+
+  /* New customers band */
+  .newpt { background: var(--cream); }
+  .newpt-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
+    margin-top: 12px;
+  }
+  @media (max-width: 880px) { .newpt-grid { grid-template-columns: 1fr; max-width: 520px; margin: 12px auto 0; } }
+  .newpt-step {
+    background: var(--white); border: 1px solid var(--line);
+    border-radius: 4px; padding: 32px 28px;
+    position: relative;
+  }
+  .newpt-step .step-num {
+    font-family: var(--serif); font-size: 44px; font-weight: 600;
+    color: var(--warm); line-height: 1; margin-bottom: 14px;
+  }
+  .newpt-step h4 {
+    font-family: var(--serif); font-size: 22px; font-weight: 600;
+    color: var(--navy); margin-bottom: 10px; line-height: 1.25;
+  }
+  .newpt-step p { font-size: 14px; color: var(--ink-soft); line-height: 1.65; }
+
+  /* FAQ */
+  .faq { background: var(--bone); }
+  .faq-grid {
+    max-width: 900px; margin: 0 auto;
+    display: grid; gap: 18px;
+  }
+  .faq-item {
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    padding: 28px 32px;
+    transition: all 0.25s;
+  }
+  .faq-item:hover { border-color: var(--warm); }
+  .faq-item h4 {
+    font-family: var(--serif); font-size: 22px; font-weight: 600;
+    color: var(--navy); margin-bottom: 12px; line-height: 1.25;
+  }
+  .faq-item p {
+    font-size: 15px; color: var(--ink-soft); line-height: 1.7;
+  }
+
+  /* Why now band */
+  .whynow { background: var(--white); }
+  .whynow-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px;
+  }
+  @media (max-width: 980px) { .whynow-grid { grid-template-columns: 1fr; max-width: 560px; margin: 0 auto; } }
+  .whynow-card {
+    background: var(--cream); border: 1px solid var(--line);
+    border-radius: 4px; padding: 34px 30px;
+    border-top: 3px solid var(--warm);
+  }
+  .whynow-card .tag {
+    font-family: var(--display); font-size: 12px; letter-spacing: 0.22em;
+    color: var(--clay); margin-bottom: 14px;
+  }
+  .whynow-card h4 {
+    font-family: var(--serif); font-size: 22px; font-weight: 600;
+    color: var(--navy); margin-bottom: 12px; line-height: 1.3;
+  }
+  .whynow-card p { font-size: 15px; color: var(--ink-soft); line-height: 1.65; }
+
+  /* Final CTA */
+  .final-cta {
+    background: linear-gradient(135deg, var(--clay) 0%, var(--clay-deep) 100%);
+    color: var(--cream); text-align: center; padding: 110px 0;
+    position: relative; overflow: hidden;
+  }
+  .final-cta::before {
+    content: ''; position: absolute; top: -30%; left: 50%;
+    transform: translateX(-50%);
+    width: 800px; height: 800px;
+    background: radial-gradient(circle, rgba(201, 168, 120, 0.28), transparent 60%);
+    filter: blur(70px); pointer-events: none;
+  }
+  .final-cta .container { position: relative; z-index: 2; }
+  .final-cta h2 {
+    font-family: var(--serif); font-weight: 500;
+    font-size: clamp(38px, 5vw, 56px); line-height: 1.08;
+    margin-bottom: 22px; letter-spacing: -0.015em;
+  }
+  .final-cta h2 em { color: var(--cream); font-style: italic; font-weight: 600; text-decoration: underline; text-decoration-color: rgba(244,239,230,0.4); text-underline-offset: 6px; }
+  .final-cta p {
+    font-size: 19px; color: rgba(244, 239, 230, 0.92);
+    max-width: 660px; margin: 0 auto 44px; line-height: 1.6;
+  }
+  .final-actions {
+    display: flex; gap: 22px; justify-content: center; flex-wrap: wrap;
+    align-items: center;
+  }
+  .cta-btn-cream {
+    background: var(--cream); color: var(--clay); border-color: var(--cream);
+  }
+  .cta-btn-cream:hover { background: var(--white); color: var(--clay-deep); border-color: var(--white); }
+  .phone-large {
+    font-family: var(--serif); font-size: 28px; font-weight: 600;
+    color: var(--cream); display: flex; align-items: center; gap: 14px;
+  }
+  .phone-large small {
+    display: block; font-family: var(--sans);
+    font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase;
+    color: rgba(244, 239, 230, 0.75); font-weight: 600; margin-bottom: 2px;
+  }
+
+  /* Footer */
+  footer {
+    background: var(--navy-deep); color: rgba(244, 239, 230, 0.7);
+    padding: 72px 0 36px;
+  }
+  .foot-grid {
+    display: grid; grid-template-columns: 1.6fr 1fr 1fr 1fr; gap: 52px;
+    margin-bottom: 48px;
+  }
+  @media (max-width: 980px) { .foot-grid { grid-template-columns: 1fr 1fr; gap: 36px; } }
+  @media (max-width: 580px) { .foot-grid { grid-template-columns: 1fr; } }
+  footer h5 {
+    color: var(--warm); font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase;
+    margin-bottom: 18px; font-weight: 700;
+  }
+  footer ul { list-style: none; }
+  footer li { margin-bottom: 9px; font-size: 14px; line-height: 1.5; }
+  footer a:hover { color: var(--warm); }
+  .foot-bottom {
+    border-top: 1px solid rgba(201, 168, 120, 0.18); padding-top: 28px;
+    font-size: 12px; letter-spacing: 0.05em; line-height: 1.7;
+  }
+  .foot-bottom .row {
+    display: flex; justify-content: space-between; flex-wrap: wrap; gap: 18px;
+    margin-bottom: 18px;
+  }
+  .foot-disclaimer {
+    font-size: 12px; color: rgba(244, 239, 230, 0.5); line-height: 1.7;
+    border-top: 1px solid rgba(201, 168, 120, 0.12); padding-top: 18px;
+  }
+  .foot-brand {
+    font-family: var(--serif); font-size: 24px; color: var(--cream);
+    margin-bottom: 16px; font-weight: 600; line-height: 1.2;
+  }
+  .foot-brand small {
+    display: block; font-family: var(--sans);
+    font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--warm); font-weight: 600; margin-top: 4px;
+  }
+  .foot-tag {
+    font-family: var(--display); font-size: 13px; letter-spacing: 0.2em;
+    color: var(--warm); margin-bottom: 18px;
+  }
+  .signoff-link {
+    color: var(--warm); text-decoration: underline; text-underline-offset: 3px;
+  }
+  .signoff-link:hover { color: var(--cream); }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <a href="./" class="brand">
+      Howard Motors
+      <small>De Pere &middot; Monroe Road &middot; Since 1976</small>
+    </a>
+    <nav class="nav-links">
+      <a href="#heritage">Our Story</a>
+      <a href="#warranty">Warranty</a>
+      <a href="#lanes">Service &amp; Sales</a>
+      <a href="#services">What We Recommend</a>
+      <a href="#audit">Audit</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a href="#contact" class="cta-btn">Call the Shop</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <div class="hero-eyebrow">De Pere &middot; 3510 Monroe Road &middot; Wisconsin &middot; Since 1976</div>
+      <h1>The family-run mechanic and used-car shop on Monroe Road <em>for forty-nine years.</em></h1>
+      <p class="hero-sub">Howard Motors has worked on cars, trucks, and SUVs at 3510 Monroe Road in De Pere since 1976. Full-service auto repair (tune-ups, oil changes, transmission, brake repair, full diagnostic) and a used-vehicle sales floor under the same roof. Most cars, trucks, and SUVs sold carry a written 6 Month / 6,000 Mile warranty.</p>
+      <div class="hero-actions">
+        <a href="#contact" class="cta-btn">Call the Shop</a>
+        <div class="hero-phone">De Pere shop<br><strong>(920) 336-7870</strong></div>
+      </div>
+      <div class="hero-notice">
+        <strong>A note about email:</strong> the howardmotorsindepere.com domain does not currently route a business inbox. The fastest way to reach the shop today is the phone line at (920) 336-7870 or the Facebook page. A working inbox on the domain is in the rebuild plan.
+      </div>
+      <div class="hero-strip">
+        <span class="chip">Founded 1976</span>
+        <span class="chip">Family-Run Forty-Nine Years</span>
+        <span class="chip">6 Month / 6,000 Mile Warranty</span>
+        <span class="chip">Mechanic + Used-Car Sales</span>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div class="hero-card-tag">An Independent Shop</div>
+      <h3>Family-run. Monroe Road. Forty-nine years and counting.</h3>
+      <div class="hero-card-divider"></div>
+      <div class="hero-card-stat">
+        <span class="num">49</span>
+        <div class="lbl"><strong>Years on Monroe Road</strong>Founded 1976 at 3510 Monroe Road, De Pere. Family-run since opening.</div>
+      </div>
+      <div class="hero-card-stat">
+        <span class="num">2</span>
+        <div class="lbl"><strong>Lanes under one roof</strong>Full-service auto repair and a used-vehicle sales floor at the same address.</div>
+      </div>
+      <div class="hero-card-stat">
+        <span class="num">6</span>
+        <div class="lbl"><strong>Months / 6,000 Miles warranty</strong>Written warranty on most cars, trucks, and SUVs sold from the lot.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="trust">
+  <div class="container trust-grid">
+    <div class="trust-item">
+      <span class="num">1976</span>
+      <div class="lbl">Year Founded</div>
+    </div>
+    <div class="trust-item">
+      <span class="num">49<em>+</em></span>
+      <div class="lbl">Years on Monroe Road</div>
+    </div>
+    <div class="trust-item">
+      <span class="num">6<em>mo</em></span>
+      <div class="lbl">/ 6,000 Mile Warranty</div>
+    </div>
+    <div class="trust-item">
+      <span class="num">100<em>%</em></span>
+      <div class="lbl">Family-Run, Independent</div>
+    </div>
+  </div>
+</section>
+
+<section id="heritage" class="heritage">
+  <div class="container heritage-grid">
+    <div class="heritage-img">
+      <div class="heritage-img-inner">
+        <span class="label">Founded</span>
+        <div class="year">1976</div>
+        <p class="quote">"Same address. Same Monroe Road shop."</p>
+      </div>
+    </div>
+    <div>
+      <div class="section-eyebrow" style="text-align: left;">Our Story</div>
+      <h2>A family opened a Monroe Road shop in 1976. <em>It is still here.</em></h2>
+      <p>Howard Motors opened at 3510 Monroe Road in De Pere, Wisconsin in 1976. The shop has been family-run since that first year, working on cars, trucks, and SUVs for De Pere drivers and selling used vehicles from the lot at the same address.</p>
+      <p>Forty-nine years later, the address has not moved and the family-run framing has not changed. That continuity is not an accident. Most independent mechanic shops do not clear ten years. Most family-run used-car lots do not clear twenty. Monroe Road has carried this one across both bars by a wide margin, with a service bay on one side and a sales lot on the other.</p>
+      <div class="heritage-quote">"The same Monroe Road address, the same family-run shop, two lanes of work under one roof since 1976."</div>
+      <p>The current operator carries that story forward. The shop names and family details that belong on this page are confirmed with the current operator at kickoff, not invented. Until then the verified phrase is the one above: family-run on Monroe Road since 1976.</p>
+    </div>
+  </div>
+</section>
+
+<section id="warranty" class="stage">
+  <div class="container stage-grid">
+    <div class="stage-img">
+      <div class="stage-img-tag">A Written Trust Signal</div>
+      <div class="stage-img-headline">Six months. Six thousand miles. In writing.</div>
+      <p class="stage-img-quote">"The kind of warranty length most used-car lots in the corridor do not put on paper, sitting on a Monroe Road sales floor since 1976."</p>
+    </div>
+    <div>
+      <div class="section-eyebrow" style="text-align: left;">A credential most used-car lots do not match</div>
+      <h2>A 6 Month / 6,000 Mile written warranty <em>on most cars, trucks, and SUVs.</em></h2>
+      <p>Howard Motors offers a written 6 Month / 6,000 Mile warranty on most cars, trucks, and SUVs sold from the Monroe Road lot. That term lives in the published warranty language on the shop's site and is honored from the same address that has done the mechanic work for the vehicle in the first place.</p>
+      <ul class="stage-list">
+        <li><strong>6 Month / 6,000 Mile</strong> &middot; Written warranty on most cars, trucks, and SUVs sold from the lot</li>
+        <li><strong>Same-shop service</strong> &middot; Repair work and warranty work happen at the same Monroe Road address</li>
+        <li><strong>Forty-nine years on the same address</strong> &middot; The warranty is honored by the operator who issued it</li>
+        <li><strong>Family-run since 1976</strong> &middot; The shop that wrote the term is the shop that backs it</li>
+        <li><strong>Coverage scope</strong> &middot; Specific exclusions and eligibility are walked through at the counter, on the shop's own published terms</li>
+      </ul>
+      <div class="stage-pull">"A written used-vehicle warranty on a family-run lot is the rarest trust signal a Monroe Road shopper can ask for."</div>
+      <p>That term is on the published warranty language at the shop today. It is not in any AI-readable schema, not in any meta description, not on the homepage above the fold. This page exists to put it where AI search can read it. Coverage details, exclusions, and the claim process are reviewed at the counter against the shop's published terms.</p>
+    </div>
+  </div>
+</section>
+
+<section id="lanes" class="locations">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-eyebrow">Two Lanes Under One Roof</div>
+      <h2 class="section-title">One Monroe Road shop. <em>Two lanes of work.</em></h2>
+      <p class="section-sub">The mechanic bay and the used-vehicle sales lot have shared the same Monroe Road address since 1976. Service customers see the lot when they pull in. Lot shoppers can have the same shop service the vehicle the day they buy it. Each lane has its own intake, hours, and counter.</p>
+    </div>
+
+    <div class="locations-grid">
+      <div class="location-card">
+        <div class="location-banner flagship">
+          <div class="location-banner-tag">Service Bay &middot; Since 1976</div>
+          <div class="location-banner-name">Auto Repair</div>
+          <div class="location-banner-meta">3510 Monroe Road</div>
+        </div>
+        <div class="location-body">
+          <div class="location-spec">Full-Service Mechanic &middot; Family-Run</div>
+          <h3>Tune-ups, oil, transmission, brake, full diagnostic.</h3>
+          <p>The mechanic side of Howard Motors. Tune-ups, oil changes, transmission work, brake repair, full diagnostic, and the full-service auto-repair list a Monroe Road driver expects from a family-run shop that has worked on cars at the same address since 1976.</p>
+          <ul class="location-detail">
+            <li><strong>Address</strong> &middot; 3510 Monroe Road, De Pere, WI 54115</li>
+            <li><strong>Phone</strong> &middot; (920) 336-7870</li>
+            <li><strong>Established</strong> &middot; 1976</li>
+            <li><strong>Service area</strong> &middot; De Pere, Allouez, Green Bay, Ashwaubenon, Brown County</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="location-card">
+        <div class="location-banner harbor">
+          <div class="location-banner-tag">Used-Vehicle Lot &middot; Since 1976</div>
+          <div class="location-banner-name">Used Sales</div>
+          <div class="location-banner-meta">Cars, Trucks, SUVs</div>
+        </div>
+        <div class="location-body">
+          <div class="location-spec">Used Cars, Trucks, SUVs &middot; Written Warranty</div>
+          <h3>Used inventory backed by the same shop that services it.</h3>
+          <p>The used-vehicle lot at the same Monroe Road address. Cars, trucks, and SUVs offered with a written 6 Month / 6,000 Mile warranty on most vehicles, serviced by the same mechanic bay across the parking lot. Inventory and current asking terms are confirmed at the counter.</p>
+          <ul class="location-detail">
+            <li><strong>Address</strong> &middot; 3510 Monroe Road, De Pere, WI 54115</li>
+            <li><strong>Phone</strong> &middot; (920) 336-7870</li>
+            <li><strong>Inventory</strong> &middot; Cars, trucks, SUVs on rotation; confirmed at the counter</li>
+            <li><strong>Warranty</strong> &middot; 6 Month / 6,000 Mile on most cars, trucks, and SUVs sold</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="location-card">
+        <div class="location-banner occupational">
+          <div class="location-banner-tag">Reach the Shop &middot; Today</div>
+          <div class="location-banner-name">Contact</div>
+          <div class="location-banner-meta">Phone &amp; Facebook</div>
+        </div>
+        <div class="location-body">
+          <div class="location-spec">Phone &amp; Facebook &middot; Email Inbox In Build</div>
+          <h3>The Monroe Road shop today picks up the phone.</h3>
+          <p>The phone line at (920) 336-7870 and the Howard Motors Facebook page are the two channels that reach the shop reliably right now. The howardmotorsindepere.com domain does not currently route a business inbox; a working inbox on the domain is in the rebuild plan and will be surfaced on every page once it is live.</p>
+          <ul class="location-detail">
+            <li><strong>Phone</strong> &middot; (920) 336-7870</li>
+            <li><strong>Facebook</strong> &middot; Howard Motors of De Pere</li>
+            <li><strong>Email on the domain</strong> &middot; Not currently routed; rebuild in progress</li>
+            <li><strong>Visit</strong> &middot; 3510 Monroe Road, De Pere, WI</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-eyebrow">What We Recommend</div>
+      <h2 class="section-title">The six pieces of infrastructure <em>this shop is missing.</em></h2>
+      <p class="section-sub">A demo concept of the AEO, structured-data, and email-infrastructure work that would bring a forty-nine-year family-run mechanic and used-car shop on Monroe Road to the same AI-search visibility a national chain dealer or a CarMax-style operator currently enjoys.</p>
+    </div>
+
+    <div class="services-grid">
+      <div class="service featured">
+        <div class="service-tag">Foundation</div>
+        <h3>Email Infrastructure on the Domain</h3>
+        <div class="service-meta"><strong>MX, SPF, DKIM, DMARC + a real inbox</strong> &middot; The channel that does not currently work</div>
+        <p>The howardmotorsindepere.com domain has no mail-exchange records on the live DNS as of the audit. A customer who emails sales@ or info@ on the domain gets a bounce. Stand up Google Workspace (or Microsoft 365), add MX records, configure SPF / DKIM / DMARC, route a real inbox to the counter, and surface the address on every page.</p>
+        <ul>
+          <li>Google Workspace or Microsoft 365 provisioned on the domain</li>
+          <li>MX records added at the registrar</li>
+          <li>SPF, DKIM, DMARC configured for deliverability</li>
+          <li>Standard inboxes (sales, service, info) routed to the operator</li>
+        </ul>
+      </div>
+
+      <div class="service">
+        <div class="service-tag">Credential Moat</div>
+        <h3>6 Month / 6,000 Mile Warranty Schema</h3>
+        <div class="service-meta"><strong>Offer schema + warranty surfacing</strong> &middot; The credential most De Pere lots do not match</div>
+        <p>A dedicated warranty page that puts the 6 Month / 6,000 Mile term into Offer schema attached to the used-vehicle inventory, surfaces the warranty in the meta description and the homepage hero, and structures the language so an AI Overview answering "longest used-car warranty De Pere" can cite Howard Motors verbatim.</p>
+        <ul>
+          <li>Dedicated warranty page with the published term as written</li>
+          <li>Offer schema attached to Vehicle records on the lot</li>
+          <li>Warranty surfaced in meta description and homepage hero</li>
+          <li>Comparison block to category benchmarks, on the shop's own terms</li>
+        </ul>
+      </div>
+
+      <div class="service">
+        <div class="service-tag">Inventory Feed</div>
+        <h3>Vehicle Schema Inventory Feed</h3>
+        <div class="service-meta"><strong>Vehicle + Offer schema per listing</strong> &middot; Indexed by Google Cars and AI search</div>
+        <p>The used-vehicle inventory at Howard Motors is static HTML today, invisible to Google Cars, AI Overview's vehicle panel, CarGurus, and AutoTrader. Convert the lot to a Vehicle-schema feed with Offer schema (warranty term attached) per listing and push it where the inventory aggregators and AI search engines can read it.</p>
+        <ul>
+          <li>Vehicle schema per car, truck, and SUV on the lot</li>
+          <li>Offer schema with the 6 Month / 6,000 Mile term inline</li>
+          <li>Push to Google Cars and the AI-search inventory panel</li>
+          <li>Evaluate CarGurus and AutoTrader inclusion against lot turn</li>
+        </ul>
+      </div>
+
+      <div class="service">
+        <div class="service-tag">Capture</div>
+        <h3>Service-Line and Geo Capture Pages</h3>
+        <div class="service-meta"><strong>"Auto repair De Pere" + "used trucks De Pere"</strong> &middot; The queries that drive new customers</div>
+        <p>The capture pages for the queries a De Pere driver actually types: "auto repair De Pere WI," "mechanic De Pere," "oil change De Pere," "brake repair De Pere," "used cars De Pere WI," "used trucks De Pere," and the Monroe-Road-anchored hyperlocal lane. Each one schema-marked and AEO-formatted.</p>
+        <ul>
+          <li>Service-line pages: oil, brake, transmission, tune-up, diagnostic</li>
+          <li>Used-vehicle category pages: cars, trucks, SUVs</li>
+          <li>Hyperlocal Monroe Road De Pere anchor page</li>
+          <li>Service-area pages for Allouez, Ashwaubenon, Green Bay, Howard</li>
+        </ul>
+      </div>
+
+      <div class="service">
+        <div class="service-tag">Authority</div>
+        <h3>Heritage Page (1976)</h3>
+        <div class="service-meta"><strong>Forty-nine year same-address story</strong> &middot; Schema-marked, AEO-formatted</div>
+        <p>The page that puts the 1976 founding, the forty-nine years on Monroe Road, and the family-run framing into structured data. The authority signal that AI engines weight most heavily for a local independent operator, finally surfaced where the index can read it. The current operator name is confirmed at kickoff before Person schema goes live.</p>
+        <ul>
+          <li>Organization schema with `foundingDate` 1976</li>
+          <li>Family-run framing surfaced in the structured graph</li>
+          <li>Forty-nine-year address-continuous statement in the body</li>
+          <li>Person schema added once the operator name is confirmed</li>
+        </ul>
+      </div>
+
+      <div class="service">
+        <div class="service-tag">Review Velocity</div>
+        <h3>Facebook + Google Review Pull-Through</h3>
+        <div class="service-meta"><strong>AggregateRating + post-visit prompt</strong> &middot; The reviews the shop already has, on the site</div>
+        <p>The Howard Motors Facebook page has real reviews. None of them are pulled to the site, schema-marked, or surfaced as a trust band. Pull verified reviews to the site with reviewer permission, add AggregateRating schema, and run a post-visit Google-review prompt through the new domain inbox once email is live.</p>
+        <ul>
+          <li>Verified Facebook reviews pulled with reviewer permission</li>
+          <li>AggregateRating schema in the graph</li>
+          <li>Post-visit Google review request through the new inbox</li>
+          <li>Review velocity tracked monthly</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="audit" class="audit">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-eyebrow">The Audit Snapshot</div>
+      <h2 class="section-title">Five buyer-intent queries. <em>Howard Motors cited in zero.</em></h2>
+      <p class="section-sub">A live audit run May 2026 across ChatGPT, Perplexity, and Google's AI Overview. The five queries below are the ones a De Pere driver or used-vehicle shopper actually types. Howard Motors was cited in none of them. The reason is the structured-data and email-infrastructure gap, not the shop.</p>
+    </div>
+
+    <div class="audit-table">
+      <div class="audit-row head">
+        <div>Query</div>
+        <div>Howard Motors today</div>
+        <div>Cited instead</div>
+      </div>
+      <div class="audit-row">
+        <div class="query">auto repair De Pere WI</div>
+        <div class="finding">Not in top results. No AutomotiveBusiness or AutoRepair schema for an AI engine to anchor a citation.</div>
+        <div class="winner">Chain mechanic shops, dealer service departments, directory pages.</div>
+      </div>
+      <div class="audit-row">
+        <div class="query">used cars De Pere WI</div>
+        <div class="finding">Not capturing. Inventory is static HTML; no Vehicle schema and no feed pushed to Google Cars.</div>
+        <div class="winner">CarMax-style operators, Brown County dealer used lots, AutoTrader.</div>
+      </div>
+      <div class="audit-row">
+        <div class="query">longest used-car warranty De Pere</div>
+        <div class="finding">Not in top results. The 6 Month / 6,000 Mile term is not in any schema or meta description.</div>
+        <div class="winner">A chain dealer with a shorter warranty written into structured data.</div>
+      </div>
+      <div class="audit-row">
+        <div class="query">family-run mechanic De Pere</div>
+        <div class="finding">Not capturing. The forty-nine-year same-address credential is not surfaced in the graph.</div>
+        <div class="winner">No clear winner; the lane is open to the operator who structures it first.</div>
+      </div>
+      <div class="audit-row">
+        <div class="query">Monroe Road De Pere auto repair</div>
+        <div class="finding">Not surfacing. The hyperlocal address anchor is absent from the homepage and schema.</div>
+        <div class="winner">Map listings and a thin field of nearby operators.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="independent" class="independent">
+  <div class="container independent-grid">
+    <div>
+      <div class="section-eyebrow" style="text-align: left;">Why Independent Matters</div>
+      <h2>Family-run and independent <em>is not a small detail.</em></h2>
+      <p>More used-vehicle lots every year roll up into national chains and franchise dealer networks. Howard Motors is not one of them. The Monroe Road shop has stayed independent and family-run since the year it opened.</p>
+      <p>For a De Pere driver choosing where to service a car or buy a used truck, that distinction is worth understanding. An independent shop answers to its customers, not to a regional office. The decisions about how the bay runs, what goes on the lot, and what the warranty covers are made on Monroe Road, by people who live in De Pere.</p>
+      <ul class="independent-points">
+        <li><strong>Same address since 1976.</strong> Forty-nine years on the same Monroe Road lot.</li>
+        <li><strong>No national chain.</strong> Independent and family-run, not a franchise dealer or a chain mechanic.</li>
+        <li><strong>One shop, two lanes.</strong> Mechanic bay and used-vehicle sales sharing the same address.</li>
+        <li><strong>Decisions made here.</strong> Warranty terms, intake, and inventory are set on Monroe Road.</li>
+        <li><strong>Continuity that lasts.</strong> The same shop can service a vehicle for a household across decades.</li>
+      </ul>
+    </div>
+    <div class="independent-side">
+      <div class="tag">The Difference</div>
+      <h3>A shop that has answered to its customers for forty-nine years.</h3>
+      <div class="divider"></div>
+      <p>When the shop is independent and family-run, the person who quotes a repair is the same person whose name is on the door and who lives in the community. There is no separation between the people who set the warranty and the people who honor it. That is what Howard Motors has been on Monroe Road since 1976, and it is the part of the operation a search engine ought to be able to read.</p>
+    </div>
+  </div>
+</section>
+
+<section id="areas" class="areas">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-eyebrow">Areas We Serve</div>
+      <h2 class="section-title">On Monroe Road in De Pere. <em>Across Brown County.</em></h2>
+      <p class="section-sub">Howard Motors sits at 3510 Monroe Road in De Pere, with service and used-vehicle customers across the De Pere metro and the wider Brown County corridor. The shop is on the same Monroe Road address it has occupied since 1976.</p>
+    </div>
+
+    <div class="areas-grid">
+      <div class="area-pill"><div class="city">De Pere</div><div class="miles">Our home</div></div>
+      <div class="area-pill"><div class="city">Allouez</div><div class="miles">4 mi</div></div>
+      <div class="area-pill"><div class="city">Green Bay</div><div class="miles">7 mi</div></div>
+      <div class="area-pill"><div class="city">Ashwaubenon</div><div class="miles">5 mi</div></div>
+      <div class="area-pill"><div class="city">Howard</div><div class="miles">10 mi</div></div>
+      <div class="area-pill"><div class="city">Bellevue</div><div class="miles">7 mi</div></div>
+      <div class="area-pill"><div class="city">Hobart</div><div class="miles">6 mi</div></div>
+      <div class="area-pill"><div class="city">Brown County</div><div class="miles">county-wide</div></div>
+    </div>
+
+    <p class="areas-note">If your community is not on this list and you are looking for a family-run mechanic or used-vehicle shop in the De Pere catchment, the phone line at (920) 336-7870 is the right next step.</p>
+  </div>
+</section>
+
+<section id="newcustomers" class="newpt">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-eyebrow">New Customers</div>
+      <h2 class="section-title">Reaching the shop <em>is straightforward.</em></h2>
+      <p class="section-sub">Howard Motors welcomes new service customers and used-vehicle shoppers across the De Pere catchment. The first visit is about understanding what the vehicle needs, what the lot has available, and how the same shop can carry both ends of the file.</p>
+    </div>
+
+    <div class="newpt-grid">
+      <div class="newpt-step">
+        <div class="step-num">1</div>
+        <h4>Call the shop</h4>
+        <p>The phone line at (920) 336-7870 reaches the counter directly. Service intake, used-vehicle questions, and warranty walkthroughs all start there.</p>
+      </div>
+      <div class="newpt-step">
+        <div class="step-num">2</div>
+        <h4>Drop in or schedule</h4>
+        <p>Pull into 3510 Monroe Road for a service drop-off, a lot walkthrough, or a quick look at what is on the floor. No high-pressure pitch.</p>
+      </div>
+      <div class="newpt-step">
+        <div class="step-num">3</div>
+        <h4>A repair plan or a vehicle</h4>
+        <p>You leave with a clear picture of the work the vehicle needs, the warranty terms on a lot purchase, and a shop that has carried both lanes on Monroe Road since 1976.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="whynow" class="whynow">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-eyebrow">Why Now</div>
+      <h2 class="section-title">Three reasons this is a 2026 fix, <em>not a 2028 one.</em></h2>
+      <p class="section-sub">The forty-nine years on Monroe Road and the written 6 Month / 6,000 Mile warranty are permanent. The invisibility does not have to be. Three reasons the timing matters this year.</p>
+    </div>
+
+    <div class="whynow-grid">
+      <div class="whynow-card">
+        <div class="tag">Reason 1</div>
+        <h4>AI search adoption is on a curve, not a plateau.</h4>
+        <p>De Pere drivers choosing a mechanic and used-vehicle shoppers comparing lots already use AI assistants to shortlist. Shops cited now build a moat that compounds. Every month without schema is a month a chain dealer holds the citation that should be Howard Motors's.</p>
+      </div>
+      <div class="whynow-card">
+        <div class="tag">Reason 2</div>
+        <h4>The Monroe Road hyperlocal lane is unopposed today.</h4>
+        <p>Hyperlocal queries on the "Monroe Road De Pere" anchor have a thin competitive set. A schema-built address-anchored page can move from zero citations to the top of AI-search answers inside one indexing cycle, before the lane crowds.</p>
+      </div>
+      <div class="whynow-card">
+        <div class="tag">Reason 3</div>
+        <h4>Every day the domain inbox is down is a day email leads bounce.</h4>
+        <p>The howardmotorsindepere.com domain has no mail-exchange records on the live DNS. Customers who try to email the shop today get a bounce. Standing up the inbox in the first week of the engagement stops the bleed before the rest of the rebuild ships.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="faq">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-eyebrow">Frequently Asked</div>
+      <h2 class="section-title">What customers ask <em>before they call.</em></h2>
+      <p class="section-sub">Six questions the shop hears from new customers. If yours is not here, the phone line at (920) 336-7870 is the right next step.</p>
+    </div>
+
+    <div class="faq-grid">
+      <div class="faq-item">
+        <h4>How long has Howard Motors been open?</h4>
+        <p>Howard Motors has operated at 3510 Monroe Road in De Pere, Wisconsin since 1976. Forty-nine years on the same address, family-run from the first year, with full-service auto repair and a used-vehicle sales lot sharing the same property.</p>
+      </div>
+      <div class="faq-item">
+        <h4>Does the shop do both repair work and used-vehicle sales?</h4>
+        <p>Yes. The mechanic bay handles tune-ups, oil changes, transmission work, brake repair, full diagnostic, and the full-service auto-repair list. The used-vehicle lot at the same address sells cars, trucks, and SUVs, with most carrying a written 6 Month / 6,000 Mile warranty.</p>
+      </div>
+      <div class="faq-item">
+        <h4>What is the 6 Month / 6,000 Mile warranty?</h4>
+        <p>Most cars, trucks, and SUVs sold from the Howard Motors lot carry a written 6 Month / 6,000 Mile warranty, on the shop's own published terms. Specific exclusions, vehicle eligibility, and the claim process are walked through at the counter against the shop's published warranty language.</p>
+      </div>
+      <div class="faq-item">
+        <h4>Is Howard Motors part of a national chain?</h4>
+        <p>No. Howard Motors is independent and family-run. It is not a franchise dealer and not part of a national mechanic chain. The same family-run framing has carried across forty-nine years on the same Monroe Road address.</p>
+      </div>
+      <div class="faq-item">
+        <h4>Can I email Howard Motors?</h4>
+        <p>Not on the howardmotorsindepere.com domain today. A live DNS lookup confirmed the domain currently has no mail-exchange records, so customer email to addresses on the domain does not deliver. The phone line at (920) 336-7870 and the Howard Motors Facebook page are the two reliable channels today. A working inbox on the domain is part of the rebuild plan.</p>
+      </div>
+      <div class="faq-item">
+        <h4>How do I reach the shop?</h4>
+        <p>Call (920) 336-7870 or stop in at 3510 Monroe Road, De Pere, WI 54115. The counter handles service intake, used-vehicle questions, and warranty walkthroughs in the same conversation. Facebook is the alternate channel until the domain inbox is live.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="final-cta">
+  <div class="container">
+    <h2>A De Pere mechanic and used-car shop <em>since 1976.</em></h2>
+    <p>Howard Motors has worked on cars, trucks, and SUVs at 3510 Monroe Road for forty-nine years, family-run and independent the entire time. Two lanes under one roof and a written 6 Month / 6,000 Mile warranty on most vehicles sold. The phone line picks up. The Monroe Road counter is open.</p>
+    <div class="final-actions">
+      <a href="tel:9203367870" class="cta-btn cta-btn-cream">Call the Shop</a>
+      <div class="phone-large"><div><small>De Pere</small>(920) 336-7870</div></div>
+      <div class="phone-large"><div><small>Visit</small>3510 Monroe Road</div></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand">
+          Howard Motors
+          <small>De Pere &middot; Monroe Road &middot; Since 1976</small>
+        </div>
+        <div class="foot-tag">Family-run auto repair &amp; used vehicles</div>
+        <p style="font-size: 14px; line-height: 1.7;">An independent family-run mechanic and used-car shop at 3510 Monroe Road in De Pere, Wisconsin, in continuous operation since 1976. Full-service auto repair (tune-ups, oil changes, transmission, brake repair, full diagnostic) and used-vehicle sales (cars, trucks, SUVs) under one roof. Most cars, trucks, and SUVs sold carry a written 6 Month / 6,000 Mile warranty.</p>
+      </div>
+      <div>
+        <h5>Visit the Shop</h5>
+        <ul>
+          <li>3510 Monroe Road</li>
+          <li>De Pere, WI 54115</li>
+          <li><br></li>
+          <li><a href="tel:9203367870">(920) 336-7870</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Reach Us</h5>
+        <ul>
+          <li>Phone: (920) 336-7870</li>
+          <li>Facebook: Howard Motors of De Pere</li>
+          <li>Email on domain: in build</li>
+          <li>In person: Monroe Road counter</li>
+        </ul>
+      </div>
+      <div>
+        <h5>What We Do</h5>
+        <ul>
+          <li><a href="#services">Email Infrastructure</a></li>
+          <li><a href="#warranty">6 Month / 6,000 Mile Warranty</a></li>
+          <li><a href="#lanes">Service &amp; Sales Lanes</a></li>
+          <li><a href="#services">Inventory Feed</a></li>
+          <li><a href="#services">Heritage Page</a></li>
+          <li><a href="#services">Review Velocity</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <div class="row">
+        <div>&copy; 2026 Howard Motors. Independent, family-run mechanic and used-car shop on Monroe Road, De Pere, est. 1976.</div>
+        <div>Demo by AG1 Consulting &middot; <a class="signoff-link" href="https://andrei170.github.io/ag1/#services">andrei170.github.io/ag1/#services</a></div>
+      </div>
+      <div class="foot-disclaimer">
+        Howard Motors is an independent family-run mechanic and used-car shop. Demo concepts shown for illustration only; subject to operator review and confirmation. This page is an illustrative marketing mockup prepared by AG1 Consulting to demonstrate a search-optimized website concept. It is not the official website of Howard Motors. All heritage statements, service descriptions, warranty terms, and inventory references are subject to confirmation with the current operator at kickoff. The 6 Month / 6,000 Mile warranty term is drawn from the shop's own published warranty language; specific coverage, exclusions, vehicle eligibility, and the claim process are reviewed at the counter against the shop's published terms before any production use, and no warranty-coverage claim beyond the shop's existing published language is asserted here.
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://howardmotorsindepere.com/#organization",
+      "name": "Howard Motors",
+      "foundingDate": "1976",
+      "description": "Independent, family-run mechanic and used-car shop at 3510 Monroe Road in De Pere, Wisconsin, in continuous operation since 1976. Full-service auto repair and used-vehicle sales under one roof.",
+      "url": "https://howardmotorsindepere.com/",
+      "telephone": "+1-920-336-7870",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "3510 Monroe Road",
+        "addressLocality": "De Pere",
+        "addressRegion": "WI",
+        "postalCode": "54115",
+        "addressCountry": "US"
+      }
+    },
+    {
+      "@type": ["AutomotiveBusiness", "AutoRepair", "LocalBusiness"],
+      "@id": "https://howardmotorsindepere.com/#autorepair",
+      "name": "Howard Motors, Auto Repair",
+      "description": "The mechanic side of Howard Motors at 3510 Monroe Road in De Pere, Wisconsin. Family-run and independent since 1976. Tune-ups, oil changes, transmission work, brake repair, full diagnostic, and full-service auto repair.",
+      "url": "https://howardmotorsindepere.com/",
+      "telephone": "+1-920-336-7870",
+      "foundingDate": "1976",
+      "parentOrganization": { "@id": "https://howardmotorsindepere.com/#organization" },
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "3510 Monroe Road",
+        "addressLocality": "De Pere",
+        "addressRegion": "WI",
+        "postalCode": "54115",
+        "addressCountry": "US"
+      },
+      "areaServed": [
+        { "@type": "Place", "name": "De Pere, WI" },
+        { "@type": "Place", "name": "Allouez, WI" },
+        { "@type": "Place", "name": "Green Bay, WI" },
+        { "@type": "Place", "name": "Ashwaubenon, WI" },
+        { "@type": "Place", "name": "Howard, WI" },
+        { "@type": "Place", "name": "Bellevue, WI" },
+        { "@type": "Place", "name": "Brown County, WI" }
+      ],
+      "availableService": [
+        { "@type": "Service", "name": "Oil change" },
+        { "@type": "Service", "name": "Tune-up" },
+        { "@type": "Service", "name": "Brake repair" },
+        { "@type": "Service", "name": "Transmission repair" },
+        { "@type": "Service", "name": "Full diagnostic" },
+        { "@type": "Service", "name": "Full-service auto repair" }
+      ]
+    },
+    {
+      "@type": ["AutomotiveBusiness", "AutoDealer", "LocalBusiness"],
+      "@id": "https://howardmotorsindepere.com/#usedsales",
+      "name": "Howard Motors, Used-Vehicle Sales",
+      "description": "The used-vehicle lot of Howard Motors at 3510 Monroe Road in De Pere, Wisconsin. Cars, trucks, and SUVs sold from a family-run shop in continuous operation since 1976. Most vehicles sold carry a written 6 Month / 6,000 Mile warranty on the shop's own published terms.",
+      "url": "https://howardmotorsindepere.com/",
+      "telephone": "+1-920-336-7870",
+      "foundingDate": "1976",
+      "parentOrganization": { "@id": "https://howardmotorsindepere.com/#organization" },
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "3510 Monroe Road",
+        "addressLocality": "De Pere",
+        "addressRegion": "WI",
+        "postalCode": "54115",
+        "addressCountry": "US"
+      },
+      "areaServed": [
+        { "@type": "Place", "name": "De Pere, WI" },
+        { "@type": "Place", "name": "Brown County, WI" },
+        { "@type": "Place", "name": "Green Bay, WI" }
+      ],
+      "makesOffer": [
+        {
+          "@type": "Offer",
+          "name": "Used cars, trucks, and SUVs with a 6 Month / 6,000 Mile warranty on most vehicles",
+          "itemOffered": {
+            "@type": "Vehicle",
+            "vehicleConfiguration": "Used"
+          },
+          "warranty": {
+            "@type": "WarrantyPromise",
+            "durationOfWarranty": {
+              "@type": "QuantitativeValue",
+              "value": "6",
+              "unitText": "MON"
+            },
+            "warrantyScope": "6 Month / 6,000 Mile warranty on most cars, trucks, and SUVs sold, on the shop's own published terms. Specific exclusions, vehicle eligibility, and claim process are reviewed at the counter against the shop's published warranty language."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://howardmotorsindepere.com/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How long has Howard Motors been open?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Howard Motors has operated at 3510 Monroe Road in De Pere, Wisconsin since 1976. Forty-nine years on the same address, family-run from the first year, with full-service auto repair and a used-vehicle sales lot sharing the same property."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does the shop do both repair work and used-vehicle sales?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The mechanic bay handles tune-ups, oil changes, transmission work, brake repair, full diagnostic, and the full-service auto-repair list. The used-vehicle lot at the same address sells cars, trucks, and SUVs, with most carrying a written 6 Month / 6,000 Mile warranty."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the 6 Month / 6,000 Mile warranty?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most cars, trucks, and SUVs sold from the Howard Motors lot carry a written 6 Month / 6,000 Mile warranty, on the shop's own published terms. Specific exclusions, vehicle eligibility, and the claim process are walked through at the counter against the shop's published warranty language."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Howard Motors part of a national chain?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Howard Motors is independent and family-run. It is not a franchise dealer and not part of a national mechanic chain. The same family-run framing has carried across forty-nine years on the same Monroe Road address."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I email Howard Motors?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not on the howardmotorsindepere.com domain today. A live DNS lookup confirmed the domain currently has no mail-exchange records, so customer email to addresses on the domain does not deliver. The phone line at (920) 336-7870 and the Howard Motors Facebook page are the two reliable channels today. A working inbox on the domain is part of the rebuild plan."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I reach the shop?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Call (920) 336-7870 or stop in at 3510 Monroe Road, De Pere, WI 54115. The counter handles service intake, used-vehicle questions, and warranty walkthroughs in the same conversation. Facebook is the alternate channel until the domain inbox is live."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+</body>
+</html>
